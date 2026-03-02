@@ -1,25 +1,29 @@
 {
-  "name": "HugoBlox Codespace",
-  "image": "ghcr.io/HugoBlox/hugo-blox-dev:hugo0.153.5",
-  "updateContentCommand": "pnpm install --frozen-lockfile --prefer-offline",
-  "postCreateCommand": "pnpm install --frozen-lockfile && pnpm --version && hugo version",
+  "name": "Hugo + Node (pnpm) Codespace",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20-bookworm",
+
+  "features": {
+    "ghcr.io/devcontainers/features/hugo:1": {
+      "version": "latest",
+      "extended": true
+    }
+  },
+
   "customizations": {
     "vscode": {
       "extensions": [
-        "hugoblox.hugoblox-studio"
+        "hugoblox.hugoblox-studio",
+        "GitHub.copilot",
+        "GitHub.copilot-chat",
+        "openai.chatgpt"
       ]
     }
   },
-  "mounts": [
-    "source=pnpm-store,target=/home/vscode/.local/share/pnpm,type=volume"
-  ],
-  "remoteUser": "vscode",
-  "forwardPorts": [
-    1313
-  ],
+
+  "postCreateCommand": "bash -lc 'sudo mkdir -p /home/node/.local/share/pnpm && sudo chown -R node:node /home/node/.local /home/node/.npm /home/node/.cache 2>/dev/null || true; sudo npm i -g pnpm@latest && pnpm --version && hugo version && pnpm install --frozen-lockfile || pnpm install'",
+
+  "forwardPorts": [1313],
   "portsAttributes": {
-    "1313": {
-      "label": "Hugo Server"
-    }
+    "1313": { "label": "Hugo Server" }
   }
 }

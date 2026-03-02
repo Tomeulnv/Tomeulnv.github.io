@@ -12,10 +12,10 @@ main:
   #   identifier: UKtKBGeP
   #   url: /#papers
   #   weight: 30
-  - name: Experience
-    identifier: kelqFQ8s
-    url: experience/
-    weight: 40
+  # - name: Experience
+    #   identifier: kelqFQ8s
+      #   url: experience/
+        #   weight: 40
   # - name: Projects
   #   identifier: kWdoSnjB
   #   url: projects/
