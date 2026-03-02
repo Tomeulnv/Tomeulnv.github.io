@@ -12,55 +12,55 @@ postnominals:
   - "PhD"
   - "MIEEE"
 status:
-  icon: "☕️"
-role: "MSCA PhD Fellow in Statistics"
-bio: "Alex Johnson is a Senior AI Research Scientist at Meta AI. His research
-
-  has been published in top conferences like NeurIPS and ICML, with over
-
-  10,000 citations. Alex is passionate about pushing the boundaries of AI
-
-  while ensuring ethical development.\n"
+  icon: ""
+role: "PhD Candidate in Statistics"
+bio: "I'm a 3rd year PhD Student in Statistics at the University of Bologna. I'm funded by the Marie-Curie as part of the European Social Science Genetics Network
+    (ESSGN) project\n"
 affiliations:
-  - name: "Meta AI"
-    url: "https://ai.meta.com/"
+  - name: "University of Bologna"
+    url: "https://www.unibo.it/it"
 links:
-  - icon: "at-symbol"
-    url: "mailto:alex.johnson@example.com"
+  - icon: "envelope"
+    url: "mailto:tomeu.lopeznieto@unibo.it"
     label: "E-mail Me"
-  - icon: "brands/x"
-    url: "https://x.com/example"
+  # - icon: "brands/x"
+  #   url: "https://x.com/example"
   - icon: "brands/github"
-    url: "https://github.com/example"
+    url: "https://github.com/Tomeulnv"
   - icon: "brands/linkedin"
-    url: "https://www.linkedin.com/in/example/"
+    url: "https://www.linkedin.com/in/tomeu-l%C3%B3pez-nieto-veitch-490282165/"
   - icon: "academicons/google-scholar"
     url: "https://scholar.google.com/citations?user=example"
   - icon: "academicons/orcid"
-    url: "https://orcid.org/0000-0002-1825-0097"
+    url: "https://orcid.org/0009-0009-7526-555X"
 interests:
-  - "Large Language Models"
-  - "Computer Vision"
-  - "Reinforcement Learning"
-  - "AI Ethics"
-education:
-  - degree: "PhD Statistics"
-    institution: "Università di Bologna"
-    start: "2023-11-01"
-    end: ""
-    summary: "Thesis on scaling laws for neural language models. Published 5 papers in NeurIPS and ICML.\n"
-    button:
-      text: "Download dissertation"
-      url: "/resume.pdf"
-      icon: "hero/arrow-down-tray"
-  - degree: "MSc Econometrics and Mathematical Economics"
-    institution: "Tilburg University"
-    start: ""
-    end: ""
-  - degree: "BSc Economics"
-    institution: "Universitat Pompeu Fabra"
-    start: ""
-    end: ""
+  - "Microeconometrics"
+  - "Health Economics"
+  - "Social Science Genetics"
+  - "Statistics"
+# education:
+#   - degree: "PhD Statistics"
+#     institution: "University of Bologna"
+#     start: "2023-11-01"
+#     end: ""
+#     summary: "Thesis on scaling laws for neural language models. Published 5 papers in NeurIPS and ICML.\n"
+#     # button:
+#     #   text: "Download dissertation"
+#     #   url: "/resume.pdf"
+#     #   icon: "hero/arrow-down-tray"gmail
+#   - degree: "MSc Econometrics"
+#     institution: "Tilburg University"
+#     start: ""
+#     end: ""
+#     summary: "Thesis on ''The Optimal Subsidy for Green Electricity Investments  in a Strategic Real Options Setting'' \n"
+#     button:
+#       text: "Download dissertation"
+#       url: "https://arno.uvt.nl/show.cgi?fid=158621"
+#       icon: "hero/arrow-down-tray"
+  # - degree: "BSc Economics"
+  #   institution: "Universitat Pompeu Fabra"
+  #   start: ""
+  #   end: ""
 experience:
   - role: "Senior AI Research Scientist"
     org: "Meta AI"
@@ -97,11 +97,23 @@ languages:
     level: 5
     label: "Native"
   - name: "Spanish"
+    level: 5
+    label: "Native"
+  - name: "Catalan"
+    level: 5
+    label: "Native"
+  - name: "Italian"
     level: 4
     label: "Fluent"
-awards:
-  - title: "Best Paper Award"
-    awarder: "NeurIPS"
-    date: "2022-12-01"
-    summary: "Awarded for groundbreaking work on efficient training of large models."
-    icon: "hero/trophy"
+  - name: "French"
+    level: 2.5
+    label: "B2 (2015)"
+  - name: "German"
+    level: 1.5
+    label: "B1 (2021)"
+# awards:
+#   - title: "Best Paper Award"
+#     awarder: "NeurIPS"
+#     date: "2022-12-01"
+#     summary: "Awarded for groundbreaking work on efficient training of large models."
+#     icon: "hero/trophy"

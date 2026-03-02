@@ -46,10 +46,10 @@ links:
     url: ""
   - type: slides
     url: https://www.slideshare.net/
-  - type: source
-    url: ""
-  - type: video
-    url: ""
+  # - type: source
+  #   url: ""
+  # - type: video
+  #   url: ""
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 

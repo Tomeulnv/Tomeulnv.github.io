@@ -1,5 +1,9 @@
 # [The Academic CV That Gets You Hired](https://github.com/HugoBlox/theme-academic-cv)
 
+
+hugo server -D --bind 0.0.0.0 --port 1313
+
+
 [![Screenshot](.github/preview.webp)](https://hugoblox.com/templates/academic-cv/start/?utm_source=github&utm_medium=readme)
 
 <h1 align="center">The Portfolio That Works While You Sleep</h1>

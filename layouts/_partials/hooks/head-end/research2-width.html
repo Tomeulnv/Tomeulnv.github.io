@@ -1,0 +1,14 @@
+<script>
+  (function(){
+    try {
+      if (typeof window !== 'undefined' && window.location && window.location.pathname) {
+        var path = window.location.pathname.replace(/\/+/g,'/');
+        if (path === '/research2/' || path === '/research2') {
+          document.documentElement.classList.add('page-research2-wide');
+        }
+      }
+    } catch (e) {
+      console.error('research2-width script error', e);
+    }
+  })();
+</script>

@@ -8,18 +8,24 @@ hugoblox:
     organization: Università di Bologna
   theme:
     mode: system
-    pack: marine
+    pack: minimal
     colors:
       primary: ""
       secondary: ""
+      neutral: "neutral"
+    colors_light:
+      primary: ""
+      secondary: ""
       neutral: ""
+    surfaces:
+      header: {}
   typography:
     font: sans
     size: md
   layout:
     radius: md
     spacing: comfortable
-    avatar_shape: circle
+    avatar_shape: square
   header:
     enable: true
     style: navbar
@@ -32,6 +38,8 @@ hugoblox:
     language_switcher: true
   copyright:
     notice: © {year} {name}
+    license:
+      share_alike: false
   content:
     math:
       enable: false
