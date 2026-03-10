@@ -13,9 +13,9 @@ postnominals:
   - "MIEEE"
 status:
   icon: ""
-role: "PhD Candidate in Statistics"
-bio: "I'm a 3rd year PhD Student in Statistics at the University of Bologna. I'm funded by the Marie-Curie as part of the European Social Science Genetics Network
-    (ESSGN) project\n"
+role: "PhD Student in Statistics"
+bio: "I'm a 3rd year PhD Student in Statistics at the University of Bologna. I'm funded by the Marie-Curie as part of the <a href='https://essgn.org/' target='_blank'>European Social Science Genetics Network (ESSGN)</a> project."
+
 affiliations:
   - name: "University of Bologna"
     url: "https://www.unibo.it/it"

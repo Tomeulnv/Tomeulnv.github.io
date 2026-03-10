@@ -6,6 +6,9 @@
     "ghcr.io/devcontainers/features/hugo:1": {
       "version": "latest",
       "extended": true
+    },
+    "ghcr.io/devcontainers/features/go:1": {
+      "version": "latest"
     }
   },
 
@@ -20,7 +23,7 @@
     }
   },
 
-  "postCreateCommand": "bash -lc 'sudo mkdir -p /home/node/.local/share/pnpm && sudo chown -R node:node /home/node/.local /home/node/.npm /home/node/.cache 2>/dev/null || true; sudo npm i -g pnpm@latest && pnpm --version && hugo version && pnpm install --frozen-lockfile || pnpm install'",
+  "postCreateCommand": "bash -lc 'sudo mkdir -p /home/node/.local/share/pnpm && sudo chown -R node:node /home/node/.local /home/node/.npm /home/node/.cache 2>/dev/null || true; sudo npm i -g pnpm@latest && pnpm --version && go version && hugo version && pnpm install --frozen-lockfile || pnpm install'",
 
   "forwardPorts": [1313],
   "portsAttributes": {

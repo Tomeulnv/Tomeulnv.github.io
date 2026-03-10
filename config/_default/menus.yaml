@@ -21,10 +21,14 @@ main:
   #   url: projects/
   #   weight: 40
   - name: Research
-    identifier: aX7gHjL4
+    identifier: R2link
     url: research/
     weight: 20
-  - name: Research 2
-    identifier: R2link
-    url: research2/
+  - name: Teaching
+    identifier: teaching-link
+    url: teaching/
     weight: 25
+  # - name: Research 2
+  #   identifier: R2link
+  #   url: research2/
+  #   weight: 25

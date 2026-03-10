@@ -1,14 +1,64 @@
 <script>
-  (function(){
-    try {
-      if (typeof window !== 'undefined' && window.location && window.location.pathname) {
-        var path = window.location.pathname.replace(/\/+/g,'/');
-        if (path === '/research2/' || path === '/research2') {
-          document.documentElement.classList.add('page-research2-wide');
-        }
+(function () {
+  try {
+    if (typeof window !== "undefined" && window.location && window.location.pathname) {
+      var path = window.location.pathname.replace(/\/+/g, "/");
+      // Make Research and Teaching pages wide
+      if (path === "/research" || path.startsWith("/research/")) {
+        document.documentElement.classList.add("page-research-wide");
       }
-    } catch (e) {
-      console.error('research2-width script error', e);
+      if (path === "/teaching" || path.startsWith("/teaching/")) {
+        document.documentElement.classList.add("page-teaching-wide");
+      }
     }
-  })();
+  } catch (e) {
+    console.error("research-wide hook error", e);
+  }
+})();
 </script>
+
+<style>
+  :root {
+    --hb-wide: 64rem;
+    --hb-teaching-wide: 64rem;
+  }
+
+  /* Center the wide container(s) */
+  html.page-research-wide .max-w-prose,
+  html.page-research-wide .page-body,
+  html.page-research-wide .article-container,
+  html.page-research-wide main .container,
+  html.page-research-wide main .mx-auto,
+  html.page-research-wide main [class*="max-w-"]{
+    max-width: var(--hb-wide) !important;
+    width: min(100%, var(--hb-wide)) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  /* Remove prose 65ch constraint (keep your wide layout readable) */
+  html.page-research-wide .prose{
+    max-width: none !important;
+  }
+
+  /* Teaching page: keep wider than default but slightly narrower than Research */
+  html.page-teaching-wide .max-w-prose,
+  html.page-teaching-wide .page-body,
+  html.page-teaching-wide .article-container,
+  html.page-teaching-wide main .container,
+  html.page-teaching-wide main .mx-auto,
+  html.page-teaching-wide main [class*="max-w-"]{
+    max-width: var(--hb-teaching-wide) !important;
+    width: min(100%, var(--hb-teaching-wide)) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  html.page-teaching-wide .prose{
+    max-width: none !important;
+  }
+</style>

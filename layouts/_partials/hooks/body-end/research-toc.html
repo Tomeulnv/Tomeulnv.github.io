@@ -1,0 +1,34 @@
+{{- if eq .Section "research" -}}
+<nav class="research-toc" aria-label="Page sections">
+  <a href="#publications" class="toc-link" data-section="publications">Publications</a>
+  <a href="#working-papers" class="toc-link" data-section="working-papers">Working papers</a>
+  <a href="#works-in-progress" class="toc-link" data-section="works-in-progress">Works in progress</a>
+</nav>
+<script>
+(function(){
+  var links = document.querySelectorAll('.toc-link');
+  var ids = Array.from(links).map(function(a){ return a.getAttribute('data-section'); });
+  function update(){
+    var current = '';
+    var lastExisting = '';
+    ids.forEach(function(id){
+      var el = document.getElementById(id);
+      if(!el) return;
+      lastExisting = id;
+      if(el.getBoundingClientRect().top <= 150) current = id;
+    });
+
+    var nearBottom = (window.scrollY + window.innerHeight) >= (document.documentElement.scrollHeight - 2);
+    if(nearBottom && lastExisting) current = lastExisting;
+
+    links.forEach(function(a){
+      a.classList.toggle('active', a.getAttribute('data-section') === current);
+    });
+  }
+  window.addEventListener('scroll', update, {passive:true});
+  window.addEventListener('hashchange', update);
+  window.addEventListener('resize', update);
+  update();
+})();
+</script>
+{{- end -}}

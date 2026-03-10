@@ -14,7 +14,7 @@ sections:
     content:
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: me
-      text: ''
+      text: "I'm a 3rd year PhD Student in Statistics at the University of Bologna. I'm funded by the Marie Skłodowska-Curie Actions as part of the European Social Science Genetics Network ([ESSGN](https://essgn.org/)) project."
       # Show a call-to-action button under your biography? (optional)
       button:
         text: Download CV
@@ -28,7 +28,7 @@ sections:
       # Use the new Gradient Mesh which automatically adapts to the selected theme colors
       background:
         gradient_mesh:
-          enable: true
+          enable: false
 
       # Name heading sizing to accommodate long or short names
       name:
@@ -50,27 +50,132 @@ sections:
         Please reach out to collaborate 😃
     design:
       columns: '1'
-  - block: collection
-    id: papers
+
+  - block: markdown
+    id: tic-tac-toe
     content:
-      title: Featured Publications
-      filters:
-        folders:
-          - publications
-        featured_only: true
+      title: '🎮 Tic-Tac-Toe'
+      text: |-
+        You've scrolled down enough, can you beat me?
+        <div id="ttt-game" style="text-align:center;">
+          <p id="ttt-status" style="font-size:1.1rem;font-weight:600;margin-bottom:.6rem;">Your turn (X)</p>
+          <div id="ttt-board" style="display:inline-grid;grid-template-columns:repeat(3,64px);gap:4px;"></div>
+          <br>
+          <button id="ttt-reset" style="margin-top:.8rem;padding:.35rem .9rem;border:1px solid rgba(0,0,0,.18);border-radius:999px;background:transparent;font-size:.88rem;font-weight:600;cursor:pointer;">Reset</button>
+        </div>
+        <script>
+        (function(){
+          var board,turn,over;
+          var wins=[[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[2,4,6]];
+          var el=document.getElementById('ttt-board');
+          var st=document.getElementById('ttt-status');
+          var borderC='#1f2937';
+          var bgC='#374151';
+          var hoverC='#4b5563';
+          var txtC='#f9fafb';
+          function cellStyle(){return 'width:64px;height:64px;font-size:1.6rem;font-weight:700;border:2px solid '+borderC+';border-radius:6px;background:'+bgC+';cursor:pointer;color:'+txtC+';';}
+          function emptyCells(){
+            var out=[];
+            for(var i=0;i<board.length;i++) if(!board[i]) out.push(i);
+            return out;
+          }
+          function findWinningMove(mark){
+            for(var i=0;i<wins.length;i++){
+              var w=wins[i];
+              var a=board[w[0]],b=board[w[1]],c=board[w[2]];
+              if(a===mark&&b===mark&&!c) return w[2];
+              if(a===mark&&c===mark&&!b) return w[1];
+              if(b===mark&&c===mark&&!a) return w[0];
+            }
+            return -1;
+          }
+          function bestCpuMove(){
+            var winMove=findWinningMove('O');
+            if(winMove>=0) return winMove;
+            var blockMove=findWinningMove('X');
+            if(blockMove>=0) return blockMove;
+            if(!board[4]) return 4;
+            var corners=[0,2,6,8].filter(function(i){return !board[i];});
+            if(corners.length) return corners[Math.floor(Math.random()*corners.length)];
+            var rest=emptyCells();
+            return rest[Math.floor(Math.random()*rest.length)];
+          }
+          function renderMove(i,mark){
+            board[i]=mark;
+            var b=el.children[i];
+            b.textContent=mark;
+            b.disabled=true;
+            b.style.cursor='default';
+          }
+          function init(){
+            board=Array(9).fill('');turn='X';over=false;
+            el.innerHTML='';st.textContent='Your turn (X)';
+            for(var i=0;i<9;i++){
+              var b=document.createElement('button');
+              b.setAttribute('style',cellStyle());
+              b.dataset.i=i;
+              b.addEventListener('click',play);
+              b.addEventListener('mouseenter',function(){this.style.background=hoverC;});
+              b.addEventListener('mouseleave',function(){this.style.background=bgC;});
+              el.appendChild(b);
+            }
+          }
+          function check(m){
+            for(var i=0;i<wins.length;i++){
+              var w=wins[i];
+              if(board[w[0]]===m&&board[w[1]]===m&&board[w[2]]===m) return true;
+            }
+            return false;
+          }
+          function play(e){
+            if(over||turn!=='X') return;
+            var i=+e.target.dataset.i;
+            if(board[i]) return;
+            renderMove(i,'X');
+            if(check('X')){st.textContent='You win!';over=true;return;}
+            if(board.every(function(c){return c;})){st.textContent="It's a draw!";over=true;return;}
+            turn='O';
+            st.textContent='Thinking...';
+            setTimeout(function(){
+              if(over) return;
+              var cpuMove=bestCpuMove();
+              renderMove(cpuMove,'O');
+              if(check('O')){st.textContent='I win!';over=true;return;}
+              if(board.every(function(c){return c;})){st.textContent="It's a draw!";over=true;return;}
+              turn='X';
+              st.textContent='Your turn (X)';
+            },220);
+          }
+          document.getElementById('ttt-reset').addEventListener('click',init);
+          init();
+        })();
+        </script>
     design:
-      view: article-grid
-      columns: 2
-  - block: collection
-    content:
-      title: Recent Publications
-      text: ''
-      filters:
-        folders:
-          - publications
-        exclude_featured: false
-    design:
-      view: citation
+      columns: '1'
+      spacing:
+        padding: [2rem, 0, 2rem, 0]
+
+  # - block: collection
+  #   id: papers
+  #   content:
+  #     title: Featured Publications
+  #     filters:
+  #       folders:
+  #         - publications
+  #       featured_only: true
+  #   design:
+  #     view: article-grid
+  #     columns: 2
+  # - block: collection
+  #   content:
+  #     title: Recent Publications
+  #     text: ''
+  #     filters:
+  #       folders:
+  #         - publications
+  #       exclude_featured: false
+  #   design:
+  #     view: citation
   # - block: collection
   #   id: talks
   #   content:
