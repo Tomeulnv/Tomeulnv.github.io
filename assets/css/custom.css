@@ -89,13 +89,50 @@ html.dark .research-toc .toc-link.active{
 #section-resume-biography-3 h1{
   font-size: 1.875rem !important;
   line-height: 1.2 !important;
+  font-weight: 700 !important;
 }
 
-#section-resume-biography-3 .grid{ gap: 2rem 3rem; }
+#section-resume-biography-3 .grid{
+  gap: 2rem 3rem;
+}
+
+@media (min-width: 768px){
+  #section-resume-biography-3 .md\:col-span-8{
+    max-width: 85%;
+    margin-left: 0.35rem;
+  }
+}
+
+/* About column: use full width like other column content and justify text */
+#section-resume-biography-3 .bio-text,
+#section-resume-biography-3 .prose{
+  max-width: 100% !important;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* Interests: 3 chips per row on desktop, responsive on smaller screens */
+#section-resume-biography-3 .flex.flex-wrap.gap-3 > span.inline-block.bg-primary-50{
+  box-sizing: border-box;
+  flex: 0 0 calc((100% - 2 * 0.75rem) / 3);
+  text-align: center;
+}
+
+@media (max-width: 900px){
+  #section-resume-biography-3 .flex.flex-wrap.gap-3 > span.inline-block.bg-primary-50{
+    flex: 0 0 calc((100% - 0.75rem) / 2);
+  }
+}
+
+@media (max-width: 560px){
+  #section-resume-biography-3 .flex.flex-wrap.gap-3 > span.inline-block.bg-primary-50{
+    flex: 0 0 100%;
+  }
+}
 
 /* Hide featured images on works-in-progress cards */
 article:has(a[href*="/works-in-progress/"])
-  .relative.overflow-hidden.aspect-\\[16\\/9\\]{
+  .relative.overflow-hidden.aspect-\[16\/9\]{
   display: none !important;
 }
 
@@ -111,7 +148,16 @@ article:has(a[href*="/works-in-progress/"])
   font-weight: 650;
   font-size: 1.2rem;
   line-height: 1.22;
+  color: rgba(0,0,0,.96);
   margin: 0 0 .18rem 0;
+}
+
+.pub-title a{
+  color: inherit !important;
+}
+
+html.dark .pub-title{
+  color: rgba(255,255,255,.96);
 }
 
 .pub-authors{
@@ -198,6 +244,27 @@ article:has(a[href*="/works-in-progress/"])
 .bio-text strong,
 .bio-text b{
   font-weight: 400 !important;
+}
+
+/* About links: keep visual weight, remove underline */
+#section-resume-biography-3 .bio-text a,
+#section-resume-biography-3 .prose a{
+  text-decoration: none !important;
+  border-bottom: 0 !important;
+}
+#section-resume-biography-3 .bio-text a:hover,
+#section-resume-biography-3 .bio-text a:focus,
+#section-resume-biography-3 .prose a:hover,
+#section-resume-biography-3 .prose a:focus{
+  text-decoration: none !important;
+  border-bottom: 0 !important;
+}
+
+/* Header nav: align Bio/Research/Teaching with right content column */
+@media (min-width: 1024px){
+  #site-header #nav-menu{
+    margin-left: -1rem;
+  }
 }
 
 /* ------------------------------------------------------------------ */

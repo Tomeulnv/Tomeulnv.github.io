@@ -6,16 +6,24 @@
   </span>
 
   {{ $pdf := .Get "pdf" }}
+  {{ $slides := .Get "slides" }}
   {{ $code := .Get "code" }}
   {{ $bib := .Get "bib" }}
   {{ $abstract := .Get "abstract" }}
 
-  {{ if or $pdf $code $bib $abstract }}
+  {{ if or $pdf $slides $code $bib $abstract }}
   <div class="hb-attachments flex flex-wrap gap-3 mt-2">
     {{ with $pdf }}
       <a class="hb-attachment-link hb-attachment-link-small" href="{{ . | safeURL }}" target="_blank" rel="noopener">
         {{- $icon := `<svg class="cite-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>` -}}
         {{ $icon | safeHTML }}<span class="cite-label">PDF</span>
+      </a>
+    {{ end }}
+
+    {{ with $slides }}
+      <a class="hb-attachment-link hb-attachment-link-small" href="{{ . | safeURL }}" target="_blank" rel="noopener">
+        {{- $icon := `<svg class="cite-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h18v12H3z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 21h8M12 17v4"/></svg>` -}}
+        {{ $icon | safeHTML }}<span class="cite-label">SLIDES</span>
       </a>
     {{ end }}
 

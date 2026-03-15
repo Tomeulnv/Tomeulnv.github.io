@@ -14,7 +14,7 @@ sections:
     content:
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: me
-      text: "I'm a 3rd year PhD Student in Statistics at the University of Bologna. I'm funded by the Marie Skłodowska-Curie Actions as part of the European Social Science Genetics Network ([ESSGN](https://essgn.org/)) project."
+      text: "I'm a 3rd year PhD student in Statistics at the [University of Bologna](https://www.unibo.it/en), supervised by [Pietro Biroli](https://sites.google.com/site/pietrobiroli/) and [Nicola Barban](https://nicolabarban.com/). I'm funded by the Marie Skłodowska-Curie Actions as part of the European Social Science Genetics Network ([ESSGN](https://essgn.org/)) project.\n\nMy research mainly focuses on how educational policy and genetics interact to shape inequality in outcomes such as education, wages, family formation, and health."
       # Show a call-to-action button under your biography? (optional)
       button:
         text: Download CV
@@ -22,7 +22,7 @@ sections:
       headings:
         about: 'About'
         education: ''
-        interests: ''
+        interests: 'Research Interests'
     design:
       date_format: 'January 2006'
       # Use the new Gradient Mesh which automatically adapts to the selected theme colors
@@ -38,25 +38,25 @@ sections:
       avatar:
         size: large # Options: small (150px), medium (200px, default), large (320px), xl (400px), xxl (500px)
         shape: circle # Options: circle (default), square, rounded
-  - block: markdown
-    content:
-      title: '📚 My Research'
-      subtitle: ''
-      text: |-
-        Use this area to speak to your mission. I'm a research scientist in the Moonshot team at DeepMind. I blog about machine learning, deep learning, and moonshots.
+  # - block: markdown
+  #   content:
+  #     title: '📚 My Research'
+  #     subtitle: ''
+  #     text: |-
+  #       Use this area to speak to your mission. I'm a research scientist in the Moonshot team at DeepMind. I blog about machine learning, deep learning, and moonshots.
 
-        I apply a range of qualitative and quantitative methods to comprehensively investigate the role of science and technology in the economy.
+  #       I apply a range of qualitative and quantitative methods to comprehensively investigate the role of science and technology in the economy.
 
-        Please reach out to collaborate 😃
-    design:
-      columns: '1'
+  #       Please reach out to collaborate 😃
+  #   design:
+  #     columns: '1'
 
   - block: markdown
     id: tic-tac-toe
     content:
       title: '🎮 Tic-Tac-Toe'
       text: |-
-        You've scrolled down enough, can you beat me?
+        Surprised you scrolled this far... Fancy a quick game?
         <div id="ttt-game" style="text-align:center;">
           <p id="ttt-status" style="font-size:1.1rem;font-weight:600;margin-bottom:.6rem;">Your turn (X)</p>
           <div id="ttt-board" style="display:inline-grid;grid-template-columns:repeat(3,64px);gap:4px;"></div>

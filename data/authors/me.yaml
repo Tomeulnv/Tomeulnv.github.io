@@ -34,10 +34,12 @@ links:
   - icon: "academicons/orcid"
     url: "https://orcid.org/0009-0009-7526-555X"
 interests:
-  - "Microeconometrics"
+  - "Applied Econometrics"
+  - "Economics of Education"
+  - "Labour Economics"
   - "Health Economics"
   - "Social Science Genetics"
-  - "Statistics"
+  - "Statistical Methodology"
 # education:
 #   - degree: "PhD Statistics"
 #     institution: "University of Bologna"

@@ -61,7 +61,7 @@ sections:
         {{< /simplecite >}}
 
 
-        {{< simplecite pdf="" code="" bib="" >}}
+        {{< simplecite pdf="" code="" bib="" abstract="Social science and behavioural genetics has long rejected eugenic associations, yet a growing market promotes embryo selection for IQ while the research community response remains muted. We call for unified best practices, updated training and participatory ethics so the field accounts for its historical legacy and present-day impact." >}}
         <span class="pub-title">
           Early Career Researcher-Led Best Practices for Social Science and Behavioural Genetics
         </span>
@@ -71,8 +71,8 @@ sections:
         </span>
 
         <span class="pub-venue">
-          <span class="pub-journal"> Nature Human Behaviour </span><span class="pub-note">(comment)</span>
-          <span class="pub-status"> [invited minor revision] </span>
+          <span class="pub-journal"> R&R at Nature Human Behaviour </span><span class="pub-note">(comment)</span>
+          <span class="pub-status">[Draft available upon request]</span>
         </span>
 
         {{< /simplecite >}}
@@ -83,7 +83,7 @@ sections:
     content:
       title: "Works in progress"
       text: |-
-        {{< simplecite pdf="" slides="" code="" bib="" >}}
+        {{< simplecite pdf="" slides="/uploads/AM_IGSS.pdf" code="" bib="" >}}
         <span class="pub-title">
           The Impact of Educational Reforms on Assortative Mating
         </span>
