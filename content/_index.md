@@ -54,7 +54,7 @@ sections:
   - block: markdown
     id: tic-tac-toe
     content:
-      title: '🎮 Tic-Tac-Toe'
+      title: '🎮 Break Time'
       text: |-
         Surprised you scrolled this far... Fancy a quick game?
         <div id="ttt-game" style="text-align:center;">
@@ -153,7 +153,7 @@ sections:
     design:
       columns: '1'
       spacing:
-        padding: [2rem, 0, 2rem, 0]
+        padding: [6rem, 0, 2rem, 0]
 
   # - block: collection
   #   id: papers
