@@ -13,6 +13,13 @@
 
   {{ if or $pdf $slides $code $bib $abstract }}
   <div class="hb-attachments flex flex-wrap gap-3 mt-2">
+    {{ with $abstract }}
+      <button class="hb-attachment-link hb-attachment-link-small js-abstract-toggle" type="button" onclick="this.closest('.pub-list-item').querySelector('.abstract-panel').classList.toggle('abstract-open')">
+        {{- $icon := `<svg class="cite-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7"/></svg>` -}}
+        {{ $icon | safeHTML }}<span class="cite-label">ABSTRACT</span>
+      </button>
+    {{ end }}
+
     {{ with $pdf }}
       <a class="hb-attachment-link hb-attachment-link-small" href="{{ . | safeURL }}" target="_blank" rel="noopener">
         {{- $icon := `<svg class="cite-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>` -}}
@@ -41,12 +48,6 @@
       </button>
     {{ end }}
 
-    {{ with $abstract }}
-      <button class="hb-attachment-link hb-attachment-link-small js-abstract-toggle" type="button" onclick="this.closest('.pub-list-item').querySelector('.abstract-panel').classList.toggle('abstract-open')">
-        {{- $icon := `<svg class="cite-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7"/></svg>` -}}
-        {{ $icon | safeHTML }}<span class="cite-label">ABSTRACT</span>
-      </button>
-    {{ end }}
   </div>
   {{ end }}
 

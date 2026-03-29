@@ -14,7 +14,7 @@ sections:
     content:
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: me
-      text: "I'm a 3rd year PhD student in Statistics at the [University of Bologna](https://www.unibo.it/en), supervised by [Pietro Biroli](https://sites.google.com/site/pietrobiroli/) and [Nicola Barban](https://nicolabarban.com/). I'm funded by the Marie Skłodowska-Curie Actions as part of the European Social Science Genetics Network ([ESSGN](https://essgn.org/)) project.\n\nMy research mainly focuses on how educational policy and genetics interact to shape inequality in outcomes such as education, wages, family formation, and health."
+      text: "I'm a 3rd year PhD student in Statistics at the [University of Bologna](https://www.unibo.it/en), supervised by [Pietro Biroli](https://sites.google.com/site/pietrobiroli/) and [Elisabetta De Cao](http://elisabettadecao.com/). I'm funded by the Marie Skłodowska-Curie Actions as part of the European Social Science Genetics Network ([ESSGN](https://essgn.org/)) project.\n\nMy research mainly focuses on how educational policy and genetics interact to shape inequality in outcomes such as education, wages, family formation, and health."
       # Show a call-to-action button under your biography? (optional)
       button:
         text: Download CV
