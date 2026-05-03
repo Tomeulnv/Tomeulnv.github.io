@@ -11,7 +11,21 @@ sections:
     content:
       title: "Publications"
       text: |-
-        Nothing here yet, hopefully something will come up soon :)
+        {{< simplecite pdf="" code="" bib="" abstract="Social science and behavioural genetics has long rejected eugenic associations, yet a growing market promotes embryo selection for IQ while the research community response remains muted. We call for unified best practices, updated training and participatory ethics so the field accounts for its historical legacy and present-day impact." >}}
+        <span class="pub-title">
+          Early Career Researcher-Led Best Practices for Social Science and Behavioural Genetics
+        </span>
+
+        <span class="pub-authors">
+        V. Straub, N. Harerimana, L. Alajääskö, T. López-Nieto-Veitch, S. Ordóñez, A. Bülbül, Q. Peng, R. De Sabbata, M. Talens
+        </span>
+
+        <span class="pub-venue">
+          <span class="pub-journal"> R&R at Nature Human Behaviour </span><span class="pub-note"></span>
+          <span class="pub-status">(Forthcoming)</span>
+        </span>
+
+        {{< /simplecite >}}
     design:
       columns: '1'
 
@@ -56,23 +70,6 @@ sections:
         <span class="pub-venue">
           <span class="pub-journal">arXiv preprint</span>
           <span class="pub-status">[submitted, under revision]</span>
-        </span>
-
-        {{< /simplecite >}}
-
-
-        {{< simplecite pdf="" code="" bib="" abstract="Social science and behavioural genetics has long rejected eugenic associations, yet a growing market promotes embryo selection for IQ while the research community response remains muted. We call for unified best practices, updated training and participatory ethics so the field accounts for its historical legacy and present-day impact." >}}
-        <span class="pub-title">
-          Early Career Researcher-Led Best Practices for Social Science and Behavioural Genetics
-        </span>
-
-        <span class="pub-authors">
-        V. Straub, N. Harerimana, L. Alajääskö, T. López-Nieto-Veitch, S. Ordóñez, A. Bülbül, Q. Peng, R. De Sabbata, M. Talens
-        </span>
-
-        <span class="pub-venue">
-          <span class="pub-journal"> R&R at Nature Human Behaviour </span><span class="pub-note">(comment)</span>
-          <span class="pub-status">[Draft available upon request]</span>
         </span>
 
         {{< /simplecite >}}
