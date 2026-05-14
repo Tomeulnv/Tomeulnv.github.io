@@ -11,7 +11,7 @@ sections:
     content:
       title: "Publications"
       text: |-
-        {{< simplecite pdf="" code="" bib="" abstract="Social science and behavioural genetics has long rejected eugenic associations, yet a growing market promotes embryo selection for IQ while the research community response remains muted. We call for unified best practices, updated training and participatory ethics so the field accounts for its historical legacy and present-day impact." >}}
+        {{< simplecite pdf="" code="" bib="/research/early-career-best-practices/cite.bib" abstract="Social science and behavioural genetics has long rejected eugenic associations, yet a growing market promotes embryo selection for IQ while the research community response remains muted. We call for unified best practices, updated training and participatory ethics so the field accounts for its historical legacy and present-day impact." >}}
         <span class="pub-title">
           Early Career Researcher-Led Best Practices for Social Science and Behavioural Genetics
         </span>
@@ -21,8 +21,8 @@ sections:
         </span>
 
         <span class="pub-venue">
-          <span class="pub-journal"> R&R at Nature Human Behaviour </span><span class="pub-note"></span>
-          <span class="pub-status">(Forthcoming)</span>
+          <span class="pub-journal"> Nature Human Behaviour </span><span class="pub-note"></span>
+          <span class="pub-status"><a href="https://doi.org/10.1038/s41562-026-02469-6" target="_blank" rel="noopener noreferrer">(doi:10.1038/s41562-026-02469-6)</a></span>
         </span>
 
         {{< /simplecite >}}
