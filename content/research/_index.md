@@ -21,7 +21,7 @@ sections:
         </span>
 
         <span class="pub-venue">
-          <span class="pub-journal"> Nature Human Behaviour </span><span class="pub-note"></span>
+          <span class="pub-journal"> Nature Human Behaviour </span><span class="pub-year"> (2026)</span><span class="pub-note"></span>
           <span class="pub-status"><a href="https://doi.org/10.1038/s41562-026-02469-6" target="_blank" rel="noopener noreferrer">(doi:10.1038/s41562-026-02469-6)</a></span>
         </span>
 
@@ -82,7 +82,7 @@ sections:
       text: |-
         {{< simplecite pdf="" slides="/uploads/AM_IGSS.pdf" code="" bib="" abstract="Expanding access to higher education may reshape assortative mating by changing who individuals meet and partner with. However, establishing whether education changes who matches with whom is difficult, because observed spouse characteristics may themselves change within a given match. To isolate changes in partner composition, we use polygenic indices (PGIs) of the eventual spouse for education and cognition. These measures predict economically consequential characteristics but are fixed at conception and therefore cannot themselves respond to the focal individual's education. We exploit the post-war expansion of the British university system, linking the UK Biobank to a geocoded history of university provision, to instrument college attainment with the reduction in distance to the nearest university between birth and adolescence. We find that, among individuals induced to obtain a degree by improved geographic access, college attainment leads them to match with spouses whose Educational Attainment PGI is 0.68 standard deviations higher, with similarly large differences in PGIs for cognitive performance and mathematics. It also substantially increases spouse college attainment and occupation-based wages. By contrast, we find little evidence of systematic changes in within-couple similarity. Our results provide causal evidence that obtaining a college degree changes whom individuals match with, as revealed by the genetic characteristics of their spouses. The resulting matches also differ substantially in education and wages." >}}
         <span class="pub-title">
-          The Impact of Educational Reforms on Assortative Mating
+          A Degree of Attraction: Access to College and Partner Choice
         </span>
         <span class="pub-authors">
           with <a class="author-link" href="https://nicolaumartinbassols.com/">Nicolau Martin-Bassols</a>
