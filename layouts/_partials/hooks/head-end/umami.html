@@ -1,0 +1,3 @@
+{{- with getenv "UMAMI_WEBSITE_ID" -}}
+<script defer src="https://cloud.umami.is/script.js" data-website-id="{{ . }}"></script>
+{{- end -}}

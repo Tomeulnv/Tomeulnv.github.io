@@ -90,6 +90,7 @@ jobs:
       env:
         HUGO_ENVIRONMENT: production
         HUGO_BLOX_LICENSE: ${{ secrets.HUGO_BLOX_LICENSE }}
+        UMAMI_WEBSITE_ID: ${{ vars.UMAMI_WEBSITE_ID }}
       run: |
         echo "Hugo Cache Dir: $(hugo config | grep cachedir)"
         hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"

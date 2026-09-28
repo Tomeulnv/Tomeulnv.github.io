@@ -51,5 +51,7 @@ markup:
     lineNos: false
 security:
   _merge: deep
+  funcs:
+    getenv: ['^HUGO_', '^CI$', '^UMAMI_WEBSITE_ID$']
 sitemap:
   _merge: deep
