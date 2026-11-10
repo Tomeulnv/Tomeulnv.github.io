@@ -91,6 +91,7 @@ html.dark .research-toc .toc-link.active{
   flex-wrap: wrap;
   align-items: center;
   gap: .75rem;
+  margin-top: -1rem;
 }
 
 #section-resume-biography-3 .mb-16 a[href*="resume.pdf"]{
@@ -321,6 +322,9 @@ html.dark .pub-title{
 .pub-journal{
   font-weight: 600; font-size: 1.1rem; 
 }
+.pub-year{
+  font-size: 1.05rem;
+}
 .pub-status{ opacity: .75; font-size: 1rem; }
 
 .pub-doi{
@@ -412,7 +416,7 @@ html.dark .pub-title{
 }
 .bio-text strong,
 .bio-text b{
-  font-weight: 400 !important;
+  font-weight: 600 !important;
 }
 
 /* About links: keep visual weight, remove underline */
@@ -420,6 +424,10 @@ html.dark .pub-title{
 #section-resume-biography-3 .prose a{
   text-decoration: none !important;
   border-bottom: 0 !important;
+}
+#section-resume-biography-3 .bio-text a[href*="essgn.org"],
+#section-resume-biography-3 .prose a[href*="essgn.org"]{
+  font-weight: 400 !important;
 }
 #section-resume-biography-3 .bio-text a:hover,
 #section-resume-biography-3 .bio-text a:focus,
