@@ -86,10 +86,75 @@ html.dark .research-toc .toc-link.active{
   padding-bottom: 2rem !important;
 }
 
+#section-resume-biography-3 .mb-16:has(.jmp-button){
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .75rem;
+}
+
+#section-resume-biography-3 .mb-16 a[href*="resume.pdf"]{
+  background: #2e62b8 !important;
+  color: #fff !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+#section-resume-biography-3 .mb-16 a[href*="resume.pdf"]:hover,
+#section-resume-biography-3 .mb-16 a[href*="resume.pdf"]:focus-visible{
+  background: #24549f !important;
+  transform: none !important;
+}
+
+#section-resume-biography-3 .jmp-button{
+  display: inline-flex;
+  align-items: center;
+  gap: .75rem;
+  padding: 1rem 2rem;
+  border: 1px solid #dce8f8;
+  border-radius: .75rem;
+  background: #f3f7fd;
+  color: #1b1b1b;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.75rem;
+  text-decoration: none !important;
+  transition: background-color .2s, border-color .2s;
+}
+
+#section-resume-biography-3 .jmp-button-icon{
+  width: 1.25rem;
+  height: 1.25rem;
+  flex: 0 0 auto;
+}
+
+#section-resume-biography-3 .jmp-button:hover,
+#section-resume-biography-3 .jmp-button:focus-visible{
+  background: #e8f0fc;
+  border-color: #c5d8f2;
+}
+
+html.dark #section-resume-biography-3 .jmp-button{
+  border-color: #435C84;
+  background: #1B273A;
+  color: #DCE8FA;
+}
+
+html.dark #section-resume-biography-3 .jmp-button:hover,
+html.dark #section-resume-biography-3 .jmp-button:focus-visible{
+  background: #263752;
+  border-color: #435C84;
+}
+
 #section-resume-biography-3 h1{
   font-size: 1.875rem !important;
   line-height: 1.2 !important;
   font-weight: 700 !important;
+}
+
+#section-resume-biography-3 h2{
+  font-size: 1.25rem !important;
+  line-height: 1.75rem !important;
 }
 
 #section-resume-biography-3 .grid{
@@ -116,6 +181,12 @@ html.dark .research-toc .toc-link.active{
   box-sizing: border-box;
   flex: 0 0 calc((100% - 2 * 0.75rem) / 3);
   text-align: center;
+  background-color: transparent !important;
+  border: 1px solid var(--color-primary-300);
+}
+
+html.dark #section-resume-biography-3 .flex.flex-wrap.gap-3 > span.inline-block.bg-primary-50{
+  border-color: var(--color-primary-400);
 }
 
 @media (max-width: 900px){
@@ -139,8 +210,87 @@ article:has(a[href*="/works-in-progress/"])
 /* ------------------------------------------------------------------ */
 /* Publications typography (used in simplecite content)               */
 /* ------------------------------------------------------------------ */
+#section-publications .pub-list-item.view-citation,
+#section-working-papers .pub-list-item.view-citation,
+#section-works-in-progress .pub-list-item.view-citation,
+#publications .pub-list-item.view-citation,
+#working-papers .pub-list-item.view-citation,
+#works-in-progress .pub-list-item.view-citation{
+  box-sizing: border-box;
+  margin-bottom: 1.25rem !important;
+  padding: 1.5rem;
+  border: 1px solid #DDE5EF;
+  border-radius: .75rem;
+  background: #FFFFFF;
+}
+
+html.dark #section-publications .pub-list-item.view-citation,
+html.dark #section-working-papers .pub-list-item.view-citation,
+html.dark #section-works-in-progress .pub-list-item.view-citation,
+html.dark #publications .pub-list-item.view-citation,
+html.dark #working-papers .pub-list-item.view-citation,
+html.dark #works-in-progress .pub-list-item.view-citation{
+  border-color: #435C84;
+  background: #1B273A;
+}
+
+#section-publications h2,
+#section-working-papers h2,
+#section-works-in-progress h2,
+#publications h2,
+#working-papers h2,
+#works-in-progress h2{
+  margin-bottom: 1.5rem !important;
+  text-align: left;
+}
+
+#section-publications,
+#section-working-papers,
+#section-works-in-progress,
+#publications,
+#working-papers,
+#works-in-progress{
+  padding-top: 1.5rem !important;
+  padding-bottom: 4.5rem !important;
+}
+
+#section-lectured .teaching-item,
+#section-ta .teaching-item,
+#lectured .teaching-item,
+#ta .teaching-item{
+  box-sizing: border-box;
+  margin-bottom: 1.25rem;
+  padding: 1.5rem;
+  border: 1px solid #DDE5EF;
+  border-radius: .75rem;
+  background: #FFFFFF;
+}
+
+html.dark #section-lectured .teaching-item,
+html.dark #section-ta .teaching-item,
+html.dark #lectured .teaching-item,
+html.dark #ta .teaching-item{
+  border-color: #435C84;
+  background: #1B273A;
+}
+
 .pub-list-item.view-citation{
   margin-bottom: 2.8rem !important;
+}
+
+.pub-label{
+  margin-bottom: .45rem;
+  color: var(--color-primary-600);
+  font-family: inherit;
+  font-size: .8125rem;
+  font-weight: 600;
+  letter-spacing: .04em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+html.dark .pub-label{
+  color: var(--color-primary-400);
 }
 
 .pub-title{
@@ -173,6 +323,10 @@ html.dark .pub-title{
 }
 .pub-status{ opacity: .75; font-size: 1rem; }
 
+.pub-doi{
+  text-decoration: none !important;
+}
+
 /* Teaching entries: add breathing room before the next course title */
 .teaching-item .teaching-uni{
   display: block;
@@ -201,7 +355,22 @@ html.dark .pub-title{
 }
 
 .teaching-item + .teaching-item .pub-title{
-  margin-top: 2rem;
+  margin-top: 0;
+}
+
+@media (max-width: 640px){
+  #section-publications .pub-list-item.view-citation,
+  #section-working-papers .pub-list-item.view-citation,
+  #section-works-in-progress .pub-list-item.view-citation,
+  #publications .pub-list-item.view-citation,
+  #working-papers .pub-list-item.view-citation,
+  #works-in-progress .pub-list-item.view-citation,
+  #section-lectured .teaching-item,
+  #section-ta .teaching-item,
+  #lectured .teaching-item,
+  #ta .teaching-item{
+    padding: 1rem;
+  }
 }
 
 /* Author links: keep clickable but not “linky” */

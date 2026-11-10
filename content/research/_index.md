@@ -11,7 +11,7 @@ sections:
     content:
       title: "Publications"
       text: |-
-        {{< simplecite pdf="" code="" bib="/research/early-career-best-practices/cite.bib" abstract="Social science and behavioural genetics has long rejected eugenic associations, yet a growing market promotes embryo selection for IQ while the research community response remains muted. We call for unified best practices, updated training and participatory ethics so the field accounts for its historical legacy and present-day impact." >}}
+        {{< simplecite pdf="https://www.nature.com/articles/s41562-026-02469-6.pdf" code="" bib="/research/early-career-best-practices/cite.bib" abstract="Social science and behavioural genetics has long rejected eugenic associations, yet a growing market promotes embryo selection for IQ while the research community response remains muted. We call for unified best practices, updated training and participatory ethics so the field accounts for its historical legacy and present-day impact." >}}
         <span class="pub-title">
           Early Career Researcher-Led Best Practices for Social Science and Behavioural Genetics
         </span>
@@ -22,7 +22,7 @@ sections:
 
         <span class="pub-venue">
           <span class="pub-journal"> Nature Human Behaviour </span><span class="pub-year"> (2026)</span><span class="pub-note"></span>
-          <span class="pub-status"><a href="https://doi.org/10.1038/s41562-026-02469-6" target="_blank" rel="noopener noreferrer">(doi:10.1038/s41562-026-02469-6)</a></span>
+          <span class="pub-status"><a class="pub-doi" href="https://doi.org/10.1038/s41562-026-02469-6" target="_blank" rel="noopener noreferrer">(doi:10.1038/s41562-026-02469-6)</a></span>
         </span>
 
         {{< /simplecite >}}
@@ -34,20 +34,19 @@ sections:
     content:
       title: "Working papers"
       text: |-
-        {{< simplecite pdf="" slides="/uploads/mte_AIEL.pdf" code="" bib="" 
-        abstract="Does higher education amplify or compensate for inequalities associated with genetic predisposition to education? Because individuals with different genetic predispositions also select differently into college, comparisons across genetic groups can conflate differences in the gains from college with differences in who self-selects into college. To separate these returns and selection components, we extend the marginal treatment effect (MTE) framework by aligning, via a mapping function, group-specific returns at a common level of unobserved resistance to attending college, even when the distribution of resistance differs across groups. We apply the framework to the post-war expansion of university access in the United Kingdom, combining UK Biobank data with a newly constructed geocoded dataset of higher-education institutions. We use the reduction in distance to the nearest university between birth and adolescence as an instrument for college attendance and measure genetic predisposition using the Educational Attainment Polygenic Index (EA PGI). We find college returns are 0.5 log points higher among individuals in the lowest EA PGI tertile than among those in the highest. Moreover, our decomposition shows that this gap is primarily driven by differences in returns at comparable levels of resistance, with little contribution from differential sorting into college. These findings highlight the potential for expanding access to college to compensate for earnings inequalities associated with genetic predisposition to education." >}}
+        {{< simplecite label="JOB MARKET PAPER" pdf="/uploads/JMP_TomeuLNV.pdf" slides="/uploads/mte_JM.pdf" code="" bib=""
+        abstract="Does higher education amplify or compensate for inequalities associated with genetic predisposition to education? Because individuals with different genetic predispositions also select differently into university, comparisons across genetic groups can conflate differences in the gains from university with differences in who self-selects into it. To separate these returns and selection components, we extend the marginal treatment effect (MTE) framework by aligning, via a mapping function, group-specific returns at a common level of unobserved resistance to attending university, even when the distribution of resistance differs across groups. We apply the framework to the post-war expansion of university access in the United Kingdom, combining UK Biobank data with a newly constructed geocoded dataset of higher-education institutions. We use the reduction in distance to the nearest university between birth and adolescence as an instrument for obtaining a university degree and measure genetic predisposition using the Educational Attainment Polygenic Index (EA PGI). We estimate that returns to a university degree are approximately 0.36 log points higher among individuals in the lowest EA PGI tertile than among those in the highest, although the cross-group contrast is imprecise. Our decomposition suggests that this gap is primarily driven by differences in returns at comparable levels of resistance, with little contribution from differential sorting into university. These findings highlight the potential for expanding access to university to compensate for earnings inequalities associated with genetic predisposition to education." >}}
         
         <span class="pub-title">
           Genetically Informed Estimation of Marginal Returns to Education
         </span>
 
         <span class="pub-authors">
-        P. Biroli, E. De Cao, R. Pinto
+        T. López-Nieto-Veitch, P. Biroli, E. De Cao, R. Pinto
         </span>
 
         <span class="pub-venue">
           <span class="pub-journal"> </span>
-          <span class="pub-status">[Draft available upon request]</span>
         </span>
 
         {{< /simplecite >}}
@@ -87,6 +86,9 @@ sections:
         <span class="pub-authors">
           with <a class="author-link" href="https://nicolaumartinbassols.com/">Nicolau Martin-Bassols</a>
         </span>
+        <span class="pub-venue">
+          <span class="pub-status">[Draft available upon request]</span>
+        </span>
         {{< /simplecite >}}
 
         {{< simplecite pdf="" slides="" code="" bib="" abstract="University expansion transforms women's educational opportunities, with potentially lasting consequences for family formation. Whether these consequences extend beyond delayed motherhood, and how they vary with genetic propensity for education, remains uncertain. To address these questions, we combine UK Biobank data with a newly constructed geocoded history of British higher-education institutions and instrument college attainment with reductions in distance to the nearest university during childhood. Among women whose attainment responds to improved access, college increases childlessness by around 24 percentage points and reduces completed fertility by an estimated 0.64 children, although the latter estimate is less precise. First births shift from the twenties into the thirties, alongside a lower probability of eventual motherhood. The Educational Attainment Polygenic Index (EA PGI) strongly predicts college attainment and is associated with later motherhood, but does not detectably predict heterogeneity in the fertility effects of college. The interaction estimates nevertheless remain imprecise, so substantial genetic moderation cannot be ruled out. Socioeconomic subgroup estimates suggest greater increases in later first births among women from disadvantaged birth districts, whereas women from advantaged districts experience more persistent reductions in entry into motherhood. We find no statistically detectable effects on men's completed fertility or childlessness. Overall, expanding access to higher education can have persistent demographic consequences, with suggestive evidence that these differ across birth-district socioeconomic conditions." >}}
@@ -114,4 +116,3 @@ sections:
   #   design:
   #     columns: '1'
 ---
-

@@ -36,7 +36,7 @@ sections:
       text: |-
         <div class="teaching-item">
           <span class="pub-title">Econometrics</span>
-          <span class="teaching-uni">Università di Bologna (MSc in Economics and Markets | Fall 2025)</span>
+          <span class="teaching-uni">Università di Bologna (MSc in Economics and Markets | Fall 2025, Fall 2026)</span>
           <span class="pub-note">[Assistant to Denni Tommasi]</span>
           <span class="pub-note">Topics: OLS · Instrumental Variables · Potential Outcomes · RDD · DiD </span>
         </div>
