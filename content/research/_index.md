@@ -42,7 +42,7 @@ sections:
         </span>
 
         <span class="pub-authors">
-        T. López-Nieto-Veitch, g in fontP. Biroli, E. De Cao, R. Pinto
+        T. López-Nieto-Veitch, P. Biroli, E. De Cao, R. Pinto
         </span>
 
         <span class="pub-venue">
