@@ -42,13 +42,22 @@ sections:
         </span>
 
         <span class="pub-authors">
-        T. López-Nieto-Veitch, P. Biroli, E. De Cao, R. Pinto
+        Tomeu López-Nieto-Veitch, Pietro Biroli, Elisabetta De Cao, Rodrigo Pinto
         </span>
 
         <span class="pub-venue">
           <span class="pub-journal"> </span>
         </span>
 
+        {{< /simplecite >}}
+
+        {{< simplecite pdf="/uploads/Degree_of_Attraction.pdf" slides="/uploads/AM_IGSS.pdf" code="" bib="" abstract="Expanding access to higher education may reshape assortative mating by changing who individuals meet and partner with. However, establishing whether education changes who matches with whom is difficult, because observed spouse characteristics may themselves change within a given match. To isolate changes in partner composition, we use polygenic indices (PGIs) of the eventual spouse for education and cognition. These measures predict economically consequential characteristics but are fixed at conception and therefore cannot themselves respond to the focal individual's education. We exploit the post-war expansion of the British university system, linking the UK Biobank to a geocoded history of university provision, to instrument college attainment with the reduction in distance to the nearest university between birth and adolescence. We find that, among individuals induced to obtain a degree by improved geographic access, college attainment leads them to match with spouses whose Educational Attainment PGI is 0.68 standard deviations higher, with similarly large differences in PGIs for cognitive performance and mathematics. It also substantially increases spouse college attainment and occupation-based wages. By contrast, we find little evidence of systematic changes in within-couple similarity. Our results provide causal evidence that obtaining a college degree changes whom individuals match with, as revealed by the genetic characteristics of their spouses. The resulting matches also differ substantially in education and wages." >}}
+        <span class="pub-title">
+          A Degree of Attraction: Access to College and Partner Choice
+        </span>
+        <span class="pub-authors">
+          Tomeu López-Nieto-Veitch, <a class="author-link" href="https://nicolaumartinbassols.com/">Nicolau Martin-Bassols</a>
+        </span>
         {{< /simplecite >}}
 
         {{< simplecite pdf="https://arxiv.org/abs/2601.04066" code="https://github.com/Tomeulnv/wncc_sims" bib="/working-papers/wncc/cite.bib" abstract="Nested case-control (NCC) studies are a widely adopted design in epidemiology to investigate exposure-disease relationships. This paper examines weighted analyses in NCC studies, focusing on two prominent weighting methods: Kaplan-Meier (KM) weights and Generalized Additive Model (GAM) weights. We consider three target estimands: log-hazard ratios, conditional survival, and associations between exposures. While KM- and GAM-weights are generally robust, we identify specific scenarios where they can lead to biased estimates. We demonstrate that KM-weights can lead to biased estimates when a proportion of the originating cohort is effectively ineligible for NCC selection, particularly with small case proportions or numerous matching factors. Instead, GAM-weights can yield biased results if interactions between matching factors influence disease risk and are not adequately incorporated into weight calculation. Using Directed Acyclic Graphs (DAGs), we develop a framework to systematically determine which variables should be included in weight calculations. We show that the optimal set of variables depends on the target estimand and the causal relationships between matching factors, exposures, and disease risk. We illustrate our findings with both synthetic and real data from the European Prospective Investigation into Cancer and nutrition (EPIC) study. Additionally, we extend the application of GAM-weights to ''untypical'' NCC studies, where only a subset of cases are included. Our work provides crucial insights for conducting accurate and robust weighted analyses in NCC studies." >}}
@@ -58,12 +67,12 @@ sections:
         </span>
 
         <span class="pub-authors">
-          <a class="author-link" href="https://tomeulnv.github.io/">T. López-Nieto Veitch</a>,
-          <a class="author-link" href="https://rosselladesabbata.github.io/">R. De Sabbata</a>,
-          <a class="author-link" href="https://example.com/kim">R. Kim</a>,
-          S. O. Samuelsen,
-          N. C. Støer,
-          <a class="author-link"href="https://sites.google.com/site/vivianviallon/"> V. Viallon</a>
+          <a class="author-link" href="https://tomeulnv.github.io/">Tomeu López-Nieto-Veitch</a>,
+          <a class="author-link" href="https://rosselladesabbata.github.io/">Rossella De Sabbata</a>,
+          <a class="author-link" href="https://einsteinmed.edu/es/faculty/11813/ryung-s-kim">Ryung Kim</a>,
+          Sven Ove Samuelsen,
+          Nathalie C. Støer,
+          <a class="author-link" href="https://sites.google.com/site/vivianviallon/">Vivian Viallon</a>
         </span>
 
         <span class="pub-venue">
@@ -79,18 +88,6 @@ sections:
     content:
       title: "Works in progress"
       text: |-
-        {{< simplecite pdf="" slides="/uploads/AM_IGSS.pdf" code="" bib="" abstract="Expanding access to higher education may reshape assortative mating by changing who individuals meet and partner with. However, establishing whether education changes who matches with whom is difficult, because observed spouse characteristics may themselves change within a given match. To isolate changes in partner composition, we use polygenic indices (PGIs) of the eventual spouse for education and cognition. These measures predict economically consequential characteristics but are fixed at conception and therefore cannot themselves respond to the focal individual's education. We exploit the post-war expansion of the British university system, linking the UK Biobank to a geocoded history of university provision, to instrument college attainment with the reduction in distance to the nearest university between birth and adolescence. We find that, among individuals induced to obtain a degree by improved geographic access, college attainment leads them to match with spouses whose Educational Attainment PGI is 0.68 standard deviations higher, with similarly large differences in PGIs for cognitive performance and mathematics. It also substantially increases spouse college attainment and occupation-based wages. By contrast, we find little evidence of systematic changes in within-couple similarity. Our results provide causal evidence that obtaining a college degree changes whom individuals match with, as revealed by the genetic characteristics of their spouses. The resulting matches also differ substantially in education and wages." >}}
-        <span class="pub-title">
-          A Degree of Attraction: Access to College and Partner Choice
-        </span>
-        <span class="pub-authors">
-          with <a class="author-link" href="https://nicolaumartinbassols.com/">Nicolau Martin-Bassols</a>
-        </span>
-        <span class="pub-venue">
-          <span class="pub-status">[Draft available upon request]</span>
-        </span>
-        {{< /simplecite >}}
-
         {{< simplecite pdf="" slides="" code="" bib="" abstract="University expansion transforms women's educational opportunities, with potentially lasting consequences for family formation. Whether these consequences extend beyond delayed motherhood, and how they vary with genetic propensity for education, remains uncertain. To address these questions, we combine UK Biobank data with a newly constructed geocoded history of British higher-education institutions and instrument college attainment with reductions in distance to the nearest university during childhood. Among women whose attainment responds to improved access, college increases childlessness by around 24 percentage points and reduces completed fertility by an estimated 0.64 children, although the latter estimate is less precise. First births shift from the twenties into the thirties, alongside a lower probability of eventual motherhood. The Educational Attainment Polygenic Index (EA PGI) strongly predicts college attainment and is associated with later motherhood, but does not detectably predict heterogeneity in the fertility effects of college. The interaction estimates nevertheless remain imprecise, so substantial genetic moderation cannot be ruled out. Socioeconomic subgroup estimates suggest greater increases in later first births among women from disadvantaged birth districts, whereas women from advantaged districts experience more persistent reductions in entry into motherhood. We find no statistically detectable effects on men's completed fertility or childlessness. Overall, expanding access to higher education can have persistent demographic consequences, with suggestive evidence that these differ across birth-district socioeconomic conditions." >}}
         <span class="pub-title">
           College Education, Fertility and Genetics: Evidence from the Expansion of British Universities
